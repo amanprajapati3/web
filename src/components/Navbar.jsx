@@ -12,33 +12,33 @@ const Navbar = () => {
 
   return (
    <>
-      <header className='bg-black opacity-90 sticky top-0'>
-        <nav className='p-3 flex justify-between'>
-            <h1 className='text-white hover:text-orange-600 cursor-pointer pl-5 text-4xl sm:text-5xl sm:mb-7'> <a href="/">
+      <header className='bg-black opacity-90 sticky top-0 px-8'>
+        <nav className='flex justify-between'>
+            <h1 className='text-white hover:text-orange-600 cursor-pointer pl-5 py-2 text-2xl sm:text-3xl'> <a href="/">
             My<span className='hover:text-white text-orange-600'> Blog</span>
             </a></h1>
             <button className='text-white m-3 text-3xl sm:hidden' onClick={toggleMenu}>
                 { IsMenuOpen ? (<FaTimes/>)   : (<FaBars/>)}             
             </button>
-            <ul  className='p-3 hidden sm:flex sm:gap-5 
-        sm:w-fit  sm:text-2xl  text-white'>
-            <li className='text-white hover:bg-yellow-600 hover:text-black p-1 sm:p-2 sm:mb-1 sm:rounded-lg hover:duration-100'>
+            <ul className='p-3 hidden sm:flex  
+        sm:w-fit text-xl text-white'>
+            <li className='text-white hover:bg-yellow-600 hover:text-black py-1 px-5  sm:rounded-lg '>
                 <a href="/">Home</a>
             </li>
-            <li className='text-white hover:bg-yellow-600 hover:text-black p-1 sm:mb-1 sm:p-2  sm:rounded-lg hover:duration-100'>
+            <li className='text-white hover:bg-yellow-600 hover:text-black py-1 px-5   sm:rounded-lg'>
                 <a href="/about">About</a>
             </li>
-            <li className='text-white hover:bg-yellow-600 hover:text-black p-1 sm:mb-1 sm:p-2  sm:rounded-lg hover:duration-100'>
+            <li className='text-white hover:bg-yellow-600 hover:text-black py-1 px-5  sm:rounded-lg'>
                 <a href="/contact">Contact</a>
             </li>
-            <li className='text-white hover:bg-yellow-600 hover:text-black p-1 sm:mb-1 sm:p-2  sm:rounded-lg hover:duration-100'>
+            <li className='text-white hover:bg-yellow-600  hover:text-black py-1 px-5 sm:rounded-lg '>
                 <a href="/blog">Blog</a>
             </li>
-            <li className='text-white hover:bg-yellow-600 hover:text-black p-1 sm:mb-1 sm:p-2 sm:rounded-lg hover:duration-100'>
+            <li className='text-white hover:bg-yellow-600 hover:text-black py-1 px-5 sm:rounded-lg hover:duration-100'>
                 <a href="/login">Login</a>
             </li>
            </ul>
-            <div className='hidden md:flex gap-5 text-2xl  text-white mr-5 mt-4'>
+            <div className='hidden md:flex gap-5 text-2xl  text-white mt-4'>
             <a href="" className="hover:text-blue-400 hover:scale-125">
                 {" "}
                 <FaTwitter />{" "}

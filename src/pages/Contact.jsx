@@ -13,54 +13,38 @@ const Contact = () => {
       <hr />
       <div>
         <div className="flex justify-center ">
-        <form className=" p-4 md:grid md:grid-cols-2">
-        <fieldset className="">
-            <legend>
-              <h1 id="contact" className="text-white sm:text-7xl text-5xl m-6">
-                Contact Me
-              </h1>
-            </legend>
-            <div className="signin mb-10 ">
-              <div className="content">
-                <div className="form">
-                  <div className="sm:flex gap-12">
-                    <div>
-                      <div className="inputBox mb-5">
-                        <input type="text" required />
-                        <i>Enter your Name</i>
-                      </div>
-                      <div className="inputBox mb-5">
-                        <input type="number" required />
-                        <i>Phone Number</i>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="inputBox mb-5">
-                        <input type="email" required />
-                        <i>E-mail address</i>
-                      </div>
-                      <div className="inputBox mb-5">
-                        <input type="password" required />
-                        <i>Password</i>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="links text-black">
-                    <a href="#">Forgot Password</a>
-                    <a href="#">Signup</a>
-                  </div>
-                  <textarea name="" placeholder="Write your query here" className="p-2" id=""></textarea>
-                  <div className="inputBox">
-                    <input type="submit" value="submit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-        </form>
+        <form action={"/registered"} className="ml-5 lg:text-xl" >
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[300px] sm:w-[500px]"
+            />{" "}
+            <br />
+            <input
+              type="email"
+              placeholder="Your E-mail"
+              name="email"
+              required
+             className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[100%]"
+            />{" "}
+            <br />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              name="phone"
+              required
+              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[100%]"
+            />{" "}
+            <br />  
+            <button type="submit" className="rounded-md bg-blue-800 active:bg-blue-500 text-white mt-1 mb-4 w-[100%] py-1">
+                Submit
+            </button>
+          </form>
         </div>
         <div className="m-9 sm:text-2xl">
-        <h1 className="text-3xl pb-4 sm:text-4xl">Company Information</h1>
+        <h1 className="text-3xl pb-4 ">Company Information</h1>
           <p className="mb-2"><a href="#" className="text-pink-900 font-semibold border-b-2 hover:border-gray-600 hover:text-red-900 line-clamp-6"> The Creative80 Room Ltd</a></p>
           <p className="mb-2"><a href="#" className="text-pink-900 font-semibold border-b-2 hover:border-gray-600 line-clamp-6 over:text-red-900">Registered in England #38630361</a></p>
           <p className="mb-2"><a href="#" className="text-pink-900 font-semibold border-b-2 hover:border-gray-600 line-clamp-6 over:text-red-900">75 Copthorne Way, Calow, S44 2LZ, UK</a></p>

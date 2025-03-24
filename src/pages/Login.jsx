@@ -13,51 +13,44 @@ const Login = () => {
       </div>
       <h1 className="text-3xl m-3 sm:text-5xl sm:p-6">Log In</h1>
       <hr />
-      <div className="">
-        <form className=" p-4 md:grid md:grid-cols-2  ">
-          <fieldset className="">
-            <legend>
-              <h1 id="contact" className="text-white sm:text-7xl text-5xl m-6">
-                Contact Me
-              </h1>
-            </legend>
-            <div className="signin mb-20 ">
-              <div className="content">
-                <div className="form">
-                  <div className="sm:flex gap-12">
-                    <div>
-                      <div className="inputBox mb-5">
-                        <input type="text" required />
-                        <i>Enter your Name</i>
-                      </div>
-                      <div className="inputBox mb-5">
-                        <input type="number" required />
-                        <i>Phone Number</i>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="inputBox mb-5">
-                        <input type="email" required />
-                        <i>E-mail address</i>
-                      </div>
-                      <div className="inputBox mb-5">
-                        <input type="password" required />
-                        <i>Password</i>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="links">
-                    <a href="#">Forgot Password</a>
-                    <a href="#">Signup</a>
-                  </div>
-                  <div className="inputBox">
-                    <input type="submit" value="submit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </fieldset>
-        </form>
+      <div className="flex justify-center">
+      <form action={"/registered"} className="ml-5 lg:text-xl" >
+            <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              required
+              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 sm:w-[500px]"
+            />{" "}
+            <br />
+            <input
+              type="email"
+              placeholder="Your E-mail"
+              name="email"
+              required
+             className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[100%]"
+            />{" "}
+            <br />
+            <input
+              type="password"
+              placeholder="Password"
+              name="email"
+              required
+             className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[100%]"
+            />{" "}
+            <br />
+            <input
+              type="number"
+              placeholder="Phone Number"
+              name="phone"
+              required
+              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[100%]"
+            />{" "}
+            <br />  
+            <button type="submit" className="rounded-md bg-blue-800 active:bg-blue-500 text-white mt-1 mb-4  w-[100%] py-1">
+                Submit
+            </button>
+          </form>
       </div>
 
       {/* Footer section */}

@@ -6,9 +6,9 @@ const Footer = () => {
     <>
       <div className="bg-blue-950 text-white">
         <div className="p-7">
-          <div className="text-center sm:flex sm:justify-center sm:gap-24 md:gap-36 sm:mb-8 ">
+          <div className="flex justify-center sm:gap-16 gap-5 flex-wrap">
             <div className="mb-4 ">
-              <label htmlFor="" className="text-3xl">
+              <label htmlFor="" className="text-2xl">
                 Category
               </label>
               <p className="p-1">
@@ -29,7 +29,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="mb-4">
-              <label htmlFor="" className="text-3xl">
+              <label htmlFor="" className="text-2xl">
                 Apples
               </label>
               <p className="p-1">
@@ -50,7 +50,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="mb-4">
-              <label htmlFor="" className="text-3xl">
+              <label htmlFor="" className="text-2xl">
                 Cherry
               </label>
               <p className="p-1">
@@ -71,7 +71,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="mb-4">
-              <label htmlFor="" className="text-3xl">
+              <label htmlFor="" className="text-2xl">
                 Business
               </label>
               <p className="p-1">
@@ -93,7 +93,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="" className="text-2xl sm:text-4xl">
+            <label htmlFor="" className="text-2xl sm:text-3xl">
               Subscribe For Updates
             </label>
             <center className="flex sm:justify-center sm:mt-5 md:gap-10 ">
