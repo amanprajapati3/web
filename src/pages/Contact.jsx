@@ -5,8 +5,11 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <>
-      <div className="bg-black p-7 sm:p-20 ">
-        <h1 className="text-white text-center text-4xl mb-4 sm:text-7xl"> Contact Page</h1>
+      <div className="bg-gradient-to-r from-gray-400 via-gray-700 to-gray-900 p-7 sm:p-20 ">
+        <h1 className="text-white text-center text-4xl mb-4 p-5 sm:text-7xl">
+          {" "}
+          Contact Page
+        </h1> 
       </div>
 
       <h1 className="text-3xl m-3 sm:text-5xl sm:p-7">Contact Us</h1>
@@ -19,7 +22,7 @@ const Contact = () => {
               placeholder="Your Name"
               name="name"
               required
-              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[300px] sm:w-[500px]"
+              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[270px] sm:w-[500px]"
             />{" "}
             <br />
             <input

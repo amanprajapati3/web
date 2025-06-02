@@ -1,11 +1,11 @@
-import React from "react";
+
 import Footer from "../components/Footer";
 
 const About = () => {
   return (
     <>
-      <div className="bg-black p-7 sm:p-20">
-        <h1 className="text-white text-center text-4xl mb-4 sm:text-5xl">
+      <div className="bg-gradient-to-r from-red-400 via-red-700 to-red-900 p-7 sm:p-20">
+        <h1 className="text-white text-center text-4xl mb-4 p-5 sm:text-7xl">
           {" "}
           About Page
         </h1>

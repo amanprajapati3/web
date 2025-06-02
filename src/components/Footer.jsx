@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -93,12 +93,13 @@ const Footer = () => {
             </div>
           </div>
           <div>
+            
             <label htmlFor="" className="text-2xl sm:text-3xl">
               Subscribe For Updates
             </label>
-            <center className="flex sm:justify-center sm:mt-5 md:gap-10 ">
-              <input type="text" className="w-44 m-2 rounded-md h-10 mt-3 sm:p-6 md:w-[400px] " />
-              <button className="border-white border-2 px-2 rounded-xl mt-3 sm:px-5">
+            <center className=" sm:mt-5 md:gap-10 ">
+              <input type="text" className="w-44  m-2 rounded-md h-10 mt-3 sm:p-6 md:w-[400px] " />
+              <button className="border-white border-2 py-2 px-2 rounded-xl  sm:px-5">
                 Subscribe
               </button>
             </center>

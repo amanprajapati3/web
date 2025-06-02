@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 const Login = () => {
   return (
     <>
-      <div className="bg-black p-7 sm:p-20">
-        <h1 className="text-white text-center text-4xl mb-4 sm:text-7xl">
+      <div className="bg-gradient-to-r from-blue-400 via-blue-700 to-blue-900 p-7 sm:p-20">
+       <h1 className="text-white text-center text-4xl mb-4 p-5 sm:text-7xl">
           {" "}
           Login Page
-        </h1>
+        </h1> 
       </div>
       <h1 className="text-3xl m-3 sm:text-5xl sm:p-6">Log In</h1>
       <hr />
@@ -20,7 +20,7 @@ const Login = () => {
               placeholder="Your Name"
               name="name"
               required
-              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 sm:w-[500px]"
+              className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[270px] sm:w-[500px]"
             />{" "}
             <br />
             <input
@@ -47,7 +47,7 @@ const Login = () => {
               className="rounded-md outline-none border-2 border-gray-500 py-2 focus:bg-gray-300 pl-2 my-3 w-[100%]"
             />{" "}
             <br />  
-            <button type="submit" className="rounded-md bg-blue-800 active:bg-blue-500 text-white mt-1 mb-4  w-[100%] py-1">
+            <button type="submit" className="rounded-md bg-blue-800 active:bg-blue-500 text-white mt-1 mb-4  w-[100%] py-3 hover:bg-blue-950 active:scale-95 duration-75 transition-all">
                 Submit
             </button>
           </form>
