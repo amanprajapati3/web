@@ -6,87 +6,87 @@ const Footer = () => {
     <>
       <div className="bg-blue-950 text-white">
         <div className="p-7">
-          <div className="flex justify-center sm:gap-16 gap-5 flex-wrap">
+          <div className="flex justify-center items-center sm:gap-16 gap-4 flex-wrap">
             <div className="mb-4 ">
-              <label htmlFor="" className="text-2xl">
+              <h1  className="text-2xl text-center">
                 Category
-              </label>
-              <p className="p-1">
+              </h1>
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Home</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">World</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Games</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Reference</a>
               </p>
             </div>
             <div className="mb-4">
-              <label htmlFor="" className="text-2xl">
-                Apples
-              </label>
-              <p className="p-1">
+              <h1  className="text-2xl text-center">
+                Apple
+              </h1>
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Web</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">eCommerce</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Business</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Entertainment</a>
               </p>
             </div>
             <div className="mb-4">
-              <label htmlFor="" className="text-2xl">
+              <h1  className="text-2xl text-center">
                 Cherry
-              </label>
-              <p className="p-1">
+              </h1>
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Media</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Brochure</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Nonprofit</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Education</a>
               </p>
             </div>
             <div className="mb-4">
-              <label htmlFor="" className="text-2xl">
+              <h1  className="text-2xl text-center">
                 Business
-              </label>
-              <p className="p-1">
+              </h1>
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Interprenaur</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Personal</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Wiki</a>
               </p>
-              <p className="p-1">
+              <p className="p-1 text-center">
                 {" "}
                 <a href="#">Forum</a>
               </p>
