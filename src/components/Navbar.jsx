@@ -55,23 +55,26 @@ const Navbar = () => {
               </a>
             </div>
         </nav>
-        <ul  className={`${IsMenuOpen ? 'block p-5 h-fit  transition-all duration-300 scale-y-100 text-xl': 'hidden transition-all duration-300 h-0 scale-y-0 '}`}>
-            <li className='text-white hover:text-yellow-600 p-1 sm:p-2 sm:mb-1 sm:rounded-lg hover:duration-200 px-[40%] hover:ease-linear'>
-                <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li className='text-white hover:text-yellow-600 p-1 sm:mb-1 sm:p-2  sm:rounded-lg hover:duration-200 px-[40%] hover:ease-linear'>
-              <NavLink to={"/about"}>About</NavLink>
-            </li>
-            <li className='text-white hover:text-yellow-600 p-1 sm:mb-1 sm:p-2  sm:rounded-lg hover:duration-200 px-[40%] hover:ease-linear'>
-              <NavLink to={"/contact"}>Contact</NavLink>
-            </li>
-            <li className='text-white hover:text-yellow-600 p-1 sm:mb-1 sm:p-2  sm:rounded-lg hover:duration-200 hover:ease-linear px-[40%]'>
-                   <NavLink to={"/blog"}>Blog</NavLink>
-            </li>
-            <li className='text-white hover:text-yellow-600 p-1 sm:mb-1 sm:p-2 sm:rounded-lg hover:duration-200 px-[40%] py-2 hover:ease-linear'>
-                <NavLink to={"/login"}>Login</NavLink>
-            </li>
-           </ul>
+        <ul className={`sm:hidden flex flex-col items-center text-xl transition-all duration-300 overflow-hidden ${
+  IsMenuOpen ? 'h-fit py-1' : 'h-0'
+}`}>
+  {[
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About" },
+    { path: "/contact", label: "Contact" },
+    { path: "/blog", label: "Blog" },
+    { path: "/login", label: "Login" },
+  ].map((item, index) => (
+    <li
+      key={item.label}
+      className={`text-white hover:text-yellow-600 p-1 sm:mb-1 rounded-lg transition-all ease-linear
+      ${IsMenuOpen ? `animate-slideIn delay-[${index * 500}ms]` : ''}`}
+    >
+      <NavLink to={item.path}>{item.label}</NavLink>
+    </li>
+  ))}
+</ul>
+
       </header>
    </>
   )
